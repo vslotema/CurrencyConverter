@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Select from "react-select";
 import { FaExchangeAlt, FaChevronRight } from "react-icons/fa";
 
-
 const currencyStyles = {
   control: (styles) => ({
     ...styles,
@@ -12,7 +11,6 @@ const currencyStyles = {
     fontWeight: "600",
   }),
 };
-
 
 class CurrencyForms extends Component {
   render() {
@@ -73,7 +71,7 @@ class CurrencyForms extends Component {
             </div>
 
             <button
-              className="w-full text-white bg-yellow-500 relative p-6 rounded lg:transform lg:translate-y-1/4 lg:w-12 lg:h-12 "
+              className="w-full text-white bg-yellow-500 relative p-6 rounded lg:transform lg:translate-y-1/4 lg:w-12 lg:h-12 hover:bg-yellow-400 transition ease-in-out duration-500 "
               type="submit"
               onClick={(e) => this.props.onSubmit(e)}
             >

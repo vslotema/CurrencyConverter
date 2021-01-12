@@ -2,6 +2,8 @@ const KEY = "a01a310d5f514cd1b7dd30b43ff705fd";
 const URL = "https://api.currencyfreaks.com/latest?apikey=" + KEY;
 const halfDay = 4.32e7;
 
+/* This API only updates every 12 hours. So only fetch from API when last update has been more then 12 hours ago or 
+   when the rates have not been previously stored in the localStorage */
 export async function getRates() {
   try {
     var rates = JSON.parse(localStorage.getItem("rates"));

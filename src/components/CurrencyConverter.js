@@ -95,6 +95,10 @@ class CurrencyConverter extends Component {
     this.handleExchange();
   };
 
+  handleResetSubmit = () => {
+    this.setState({ submit: false });
+  };
+
   handleSwitch = (e) => {
     e.preventDefault();
 
@@ -134,6 +138,7 @@ class CurrencyConverter extends Component {
             to={this.state.to}
             amount={this.state.amount}
             submitted={this.state.submit}
+            resetSubmit={this.handleResetSubmit}
           />
         </div>
       </>

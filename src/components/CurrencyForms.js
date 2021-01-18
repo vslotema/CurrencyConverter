@@ -78,7 +78,7 @@ class CurrencyForms extends Component {
             <button
               className="w-full text-white bg-yellow-500 relative p-6 rounded lg:transform lg:translate-y-3.5 lg:w-12 lg:h-12 hover:bg-yellow-400 transition ease-in-out duration-500 "
               type="submit"
-              onClick={(e) => this.props.onSubmit(e, true)}
+              onClick={(e) => this.props.onSubmit(e)}
             >
               <FaChevronRight className="w-8 h-8 absolute transform left-2/4 -translate-x-2/4 -translate-y-2/4" />
             </button>
